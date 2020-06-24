@@ -62,9 +62,8 @@
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Organizacion Academica <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href="./anioElectivo.html">
-                                <i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; 
-                                Año lectivo</a></li>
+                            <li><a href="./anioElectivo.html"><i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; Años
+                                    lectivos</a></li>
                             <li><a href="./asigAsignaturas.html"><i
                                         class="zmdi zmdi-male-alt zmdi-hc-fw"></i>&nbsp;&nbsp;
                                     Asignación de asignaturas</a></li>
@@ -76,15 +75,15 @@
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Periodo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href="./gestiónPeriodos.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Gestión de Periodos</a></li>
-                            <li><a href="./asignaciónDocente.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Asignación de Docente</a></li>
-                            <li><a href="./esquemasEvaluación.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Esquemas de Evaluación</a></li>
@@ -117,31 +116,81 @@
         </nav>
         <div class="container">
             <div class="page-header">
-                <h1 class="all-tittles">EduTic <small>Inicio</small></h1>
+                <h1 class="all-tittles">EduTic <small>Asignación de docentes</small></h1>
             </div>
         </div>
-        <section class="full-reset text-center" style="padding: 40px 0;">
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
-                <div class="tile-name all-tittles">directivos</div>
-                <div class="tile-num full-reset">4</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
-                <div class="tile-name all-tittles">estudiantes</div>
-                <div class="tile-num full-reset">1.232</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
-                <div class="tile-name all-tittles">docentes</div>
-                <div class="tile-num full-reset">253</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-female"></i></div>
-                <div class="tile-name all-tittles" style="width: 90%;">personal administrativo</div>
-                <div class="tile-num full-reset">120</div>
-            </article>
-        </section>
+
+
+        <div class="container-fluid" style="margin: 50px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/user02.png" alt="user" class="img-responsive center-box"
+                        style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Bienvenido a la sección a la Asignación de Docentes
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="container-flat-form">
+                <div class="title-flat-form title-flat-blue">Registrar Asignación de Docente</div>
+                <form autocomplete="off">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+                            <div class="group-material">
+                                <span>Docente</span>
+                                <select class="material-control tooltips-general" data-toggle="tooltip"
+                                    data-placement="top" title="Elige la sección encargada del docente">
+                                    <option value="" disabled="" selected="">Selecciona un docente</option>
+                                    <option value="Seccion">Luis Ponce</option>
+                                    <option value="Seccion">Arturo de la Torre</option>
+                                    <option value="Seccion">Fernando Solis</option>
+                                </select>
+                            </div>
+
+
+                            <div class="group-material">
+                                <span>Cursos</span>
+                                <br><br><input type="checkbox" name="transporte" value="1"> Curso A<br>
+                                <input type="checkbox" name="transporte" value="2" checked> Curso B<br>
+                                <input type="checkbox" name="transporte" value="3"> Curso C<br>
+                                <input type="checkbox" name="transporte" value="3"> Curso D<br>
+
+                            </div>
+                            <div class="group-material">
+                                <span>Horario</span>
+                                <br><br><input type="checkbox" name="transporte" value="1"> Primera<br>
+                                <input type="checkbox" name="transporte" value="2" checked> Segunda<br>
+                                <input type="checkbox" name="transporte" value="3"> Tercera<br>
+                                <input type="checkbox" name="transporte" value="3"> Cuarta<br>
+                                <input type="checkbox" name="transporte" value="3"> Quinta<br>
+                                <input type="checkbox" name="transporte" value="3"> Sexta<br>
+                                <input type="checkbox" name="transporte" value="3"> Septima<br>
+                                <input type="checkbox" name="transporte" value="3"> Actividades Extras<br>
+
+
+                            </div>
+
+
+                            <p class="text-center">
+                                <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i
+                                        class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
+                                <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-floppy"></i>
+                                    &nbsp;&nbsp; Guardar</button>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">

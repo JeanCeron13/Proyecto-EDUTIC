@@ -39,57 +39,22 @@
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="./userAdministrativo.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
+                    <li><a href="./userAlumno.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Inicio</a></li>
                     <li>
-                        <div class="dropdown-menu-button"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp; Datos
-                            Institución <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
-                        <ul class="list-unstyled">
-                            <li><a href="./institutionAdministrativo.html"><i class="zmdi zmdi-pin"></i>&nbsp;&nbsp;
-                                    Gestion Sede</a></li>
-                            <li><a href="./GestionEdificios.html"><i class="zmdi zmdi-star-circle"></i>&nbsp;&nbsp;
-                                    Gestion edificios</a></li>
-                            <li><a href="./GestionAulas.html"><i class="zmdi zmdi-pin-account"></i>&nbsp;&nbsp; Gestion
-                                    aulas</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./reportAdministrativo.html"><i
-                                class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y estadísticas</a>
-                    </li>
-                    <li>
-                        <!------------------------------------ Organizacion Academica ---------------------------->
-
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
-                            Organizacion Academica <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
+                            Matrículas <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href="./anioElectivo.html">
-                                <i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; 
-                                Año lectivo</a></li>
-                            <li><a href="./asigAsignaturas.html"><i
-                                        class="zmdi zmdi-male-alt zmdi-hc-fw"></i>&nbsp;&nbsp;
-                                    Asignación de asignaturas</a></li>
+                            <li><a href="./userAlumnoEstado.html"><i class="zmdi zmdi-face zmdi-hc-fw">
+                                    </i>&nbsp;&nbsp; Estado</a></li>
+                            <li><a href="./userAlumnoMatricula.html"><i class="zmdi zmdi-male-alt zmdi-hc-fw">
+                                    </i>&nbsp;&nbsp; Proceso de matrícula</a></li>
                         </ul>
                     </li>
+                    <li><a href="./userAlumnoTareas.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Tareas</a></li>
                     <li>
-                        <!------------------------------------ Periodo ---------------------------->
 
-                        <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
-                            Periodo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
-                        <ul class="list-unstyled">
-                            <li><a href="./gestiónPeriodos.html">
-                                    <i class="zmdi zmdi-face zmdi-hc-fw">
-                                    </i>&nbsp;&nbsp;
-                                    Gestión de Periodos</a></li>
-                            <li><a href="./asignaciónDocente.html">
-                                    <i class="zmdi zmdi-face zmdi-hc-fw">
-                                    </i>&nbsp;&nbsp;
-                                    Asignación de Docente</a></li>
-                            <li><a href="./esquemasEvaluación.html">
-                                    <i class="zmdi zmdi-face zmdi-hc-fw">
-                                    </i>&nbsp;&nbsp;
-                                    Esquemas de Evaluación</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -101,7 +66,7 @@
                     <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
                 </figure>
                 <li style="color:#fff; cursor:default;">
-                    <span class="all-tittles">Administrativo</span>
+                    <span class="all-tittles">Alumno</span>
                 </li>
                 <li class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom"
                     title="Salir del sistema">
@@ -117,31 +82,39 @@
         </nav>
         <div class="container">
             <div class="page-header">
-                <h1 class="all-tittles">EduTic <small>Inicio</small></h1>
+                <h1 class="all-tittles">EduTic <small>Alumno - Proceso de Matricula </small></h1>
             </div>
         </div>
         <section class="full-reset text-center" style="padding: 40px 0;">
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
-                <div class="tile-name all-tittles">directivos</div>
-                <div class="tile-num full-reset">4</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
-                <div class="tile-name all-tittles">estudiantes</div>
-                <div class="tile-num full-reset">1.232</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
-                <div class="tile-name all-tittles">docentes</div>
-                <div class="tile-num full-reset">253</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-female"></i></div>
-                <div class="tile-name all-tittles" style="width: 90%;">personal administrativo</div>
-                <div class="tile-num full-reset">120</div>
-            </article>
+            <div class="container-fluid">
+                <div class="container-flat-form">
+                    <div class="title-flat-form title-flat-blue">Apobado</div>
+
+                    <article class="tile">
+                        <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
+                        <div class="tile-name all-tittles">Estudiante - Matriculado exitosamente</div>
+                        <div class="tile-num full-reset">L00001234</div>
+                    </article>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="container-flat-form">
+                    <div class="title-flat-form title-flat-blue">Reprobado</div>
+
+                    <article class="tile">
+                        <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
+                        <div class="tile-name all-tittles">Estudiante - Repite Nivel</div>
+                        <div class="tile-num full-reset">L00001234</div>
+                    </article>
+                </div>
+            </div>
         </section>
+
+        
+
+
+
+
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">

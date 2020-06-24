@@ -62,10 +62,9 @@
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Organizacion Academica <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href="./anioElectivo.html">
-                                <i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; 
-                                Año lectivo</a></li>
-                            <li><a href="./asigAsignaturas.html"><i
+                            <li><a href="./anioElectivo.html"><i class="zmdi zmdi-face zmdi-hc-fw"></i>&nbsp;&nbsp; Años
+                                    lectivos</a></li>
+                            <li><a href="./asig_asignaturas.html"><i
                                         class="zmdi zmdi-male-alt zmdi-hc-fw"></i>&nbsp;&nbsp;
                                     Asignación de asignaturas</a></li>
                         </ul>
@@ -76,15 +75,15 @@
                         <div class="dropdown-menu-button"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Periodo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
                         <ul class="list-unstyled">
-                            <li><a href="./gestiónPeriodos.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Gestión de Periodos</a></li>
-                            <li><a href="./asignaciónDocente.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Asignación de Docente</a></li>
-                            <li><a href="./esquemasEvaluación.html">
+                            <li><a href="./anioElectivo.html">
                                     <i class="zmdi zmdi-face zmdi-hc-fw">
                                     </i>&nbsp;&nbsp;
                                     Esquemas de Evaluación</a></li>
@@ -117,31 +116,84 @@
         </nav>
         <div class="container">
             <div class="page-header">
-                <h1 class="all-tittles">EduTic <small>Inicio</small></h1>
+                <h1 class="all-tittles">EduTic <small>Gestión de Periodos</small></h1>
             </div>
         </div>
-        <section class="full-reset text-center" style="padding: 40px 0;">
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-face"></i></div>
-                <div class="tile-name all-tittles">directivos</div>
-                <div class="tile-num full-reset">4</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-accounts"></i></div>
-                <div class="tile-name all-tittles">estudiantes</div>
-                <div class="tile-num full-reset">1.232</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
-                <div class="tile-name all-tittles">docentes</div>
-                <div class="tile-num full-reset">253</div>
-            </article>
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-female"></i></div>
-                <div class="tile-name all-tittles" style="width: 90%;">personal administrativo</div>
-                <div class="tile-num full-reset">120</div>
-            </article>
-        </section>
+
+        <div class="container-fluid" style="margin: 50px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/user02.png" alt="user" class="img-responsive center-box"
+                        style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Bienvenido a la sección cronograma academico
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 lead">
+                    <ol class="breadcrumb">
+                        <li><a href="./gestiónPeriodos.html">Quimestres</a></li>
+                        <li class="active">Cronograma académico</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container-flat-form">
+                <div class="title-flat-form title-flat-blue">Cronograma académico</div>
+                <form autocomplete="off">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                            <p class="text-center">
+                            <label for="start">Inicio y fin del año lectivo:</label>
+                            <br></br>
+                            <input type="date" id="start" name="trip-start" value="2020-01-01" min="2020-01-01"
+                                max="2020-12-31">
+                            <p class="text-center">
+                                <br></br>
+                                <label for="start">Inicio y fin quimestres.:</label>
+                                <br></br>
+                                <input type="date" id="start" name="trip-start" value="2020-01-01" min="2020-01-01"
+                                    max="2020-12-31">
+                            <p class="text-center">
+                                <br></br>
+
+                                <label for="start">Feriados:</label>
+                                <br></br>
+                                <input type="date" id="start" name="trip-start" value="2020-01-01" min="2020-01-01"
+                                    max="2020-12-31">
+                            <p class="text-center">
+
+                                <br></br>
+
+                                <label for="start">Fechas cívicas:</label>
+                                <br></br>
+                                <input type="date" id="start" name="trip-start" value="2020-01-01" min="2020-01-01"
+                                    max="2020-12-31">
+                            <p class="text-center">
+
+                                <br></br>
+
+
+
+                                <button type="reset" class="btn btn-info" style="margin-right: 20px;">
+                                    <i  class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="zmdi zmdi-floppy"></i>
+                                    &nbsp;&nbsp; Guardar</button>
+
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
