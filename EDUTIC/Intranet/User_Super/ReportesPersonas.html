@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>EduTic</title>
+    <title>Superusuario | Edutic</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="Shortcut Icon" type="image/x-icon" href="../../images/logolobo.png" />
@@ -35,17 +35,9 @@
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="./GestionPersonas.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Gestión de Personas</a></li>
-                    <li><a href="./GestionAspirantes.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Aspirantes</a></li>
-                    <!--<li>
-                        <div class="dropdown-menu-button"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp; Aspirantes <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
-                        <ul class="list-unstyled">
-                            <li><a href="./institutionAdministrativo.html"><i class="zmdi zmdi-pin"></i>&nbsp;&nbsp; Gestion Sede</a></li>
-                            <li><a href="./GestionEdificios.html"><i class="zmdi zmdi-star-circle"></i>&nbsp;&nbsp; Gestion edificios</a></li>
-                            <li><a href="./GestionAulas.html"><i class="zmdi zmdi-pin-account"></i>&nbsp;&nbsp; Gestion aulas</a></li>
-                        </ul>
-                    </li>-->
-                    <li><a href="./ReportesPersonas.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y estadísticas</a></li>
+                    <li><a href="./SuperUser.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Gestion de Roles</a></li>
+                    <li><a href="./GestionPersonas.html"><i class="zmdi zmdi-account-add zmdi-hc-fw"></i>&nbsp;&nbsp; Gestión de Personas</a></li>
+                    <li><a href="./ReportesPersonas.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes Personas</a></li>
                 </ul>
             </div>
         </div>
@@ -57,9 +49,9 @@
                    <img src="../assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
                 </figure>
                 <li style="color:#fff; cursor:default;">
-                    <span class="all-tittles">Administrativo</span>
+                    <span class="all-tittles">Super Usuario</span>
                 </li>
-                <li  class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom" title="Salir del sistema">
+                <li  class="tooltips-general exit-system-button" data-href="../../index.html" data-placement="bottom" title="Salir del sistema">
                     <i class="zmdi zmdi-power"></i>
                 </li>
                 <li  class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
@@ -72,59 +64,82 @@
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">EduTic <small>Gestión de Aspirantes</small></h1>
+              <h1 class="all-tittles">EduTic <small>Gestión de Personas</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
-              <li role="presentation" class="active"><a href="admininstitution.php">Aspirantes</a></li>
+              <li role="presentation" class="active"><a href="admininstitution.php">Personas</a></li>
             </ul>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3">
-                    <img src="../assets/img/institution.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                    <img src="../assets/img/user.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
-                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">  
-                    Funcionalidad que permite gestionar las aulas de la institución educativa
-                    mediante el ingreso de los campos que se presentan a continuación.
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    <label>Ingrese el código de la persona a buscar</label>
+                    <input type="search" class="material-control tooltips-general" placeholder="Código de persona" required="" data-toggle="tooltip" data-placement="top" title="Escriba el codigo de la persona"><br>
+                    <button type="submit" class="btn btn-primary">&nbsp; Buscar</button>
+                    <!--<span class="highlight"></span>
+                    <span class="bar"></span>-->                 
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="container-flat-form">
-                <div class="title-flat-form title-flat-blue">Guardar datos de las persona aspirante</div>
+                <div class="title-flat-form title-flat-blue">Datos Personales</div>
                 <form>
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Código de aula" required="" data-toggle="tooltip" data-placement="top" title="Escriba el codigo del aula">
+                                <input type="text" class="material-control tooltips-general" placeholder="Código de persona" required="" data-toggle="tooltip" data-placement="top" title="Escriba el codigo de la persona" value="PS1234">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Código de aula</label>
+                                <label>Código de persona</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Nombre del aula" required="" data-toggle="tooltip" data-placement="top" title="Escriba el nombre del aula">
+                                <input type="text" class="material-control tooltips-general" placeholder="Cédula o Pasaporte" required="" data-toggle="tooltip" data-placement="top" title="Escriba la cédula o pasaporte" value="1723401715">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre del aula</label>
+                                <label>Cédula o Pasaporte</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Edificio" required="" data-toggle="tooltip" data-placement="top" title="Escriba el nombre del edificio donde se ubica el aula">
+                                <input type="text" class="material-control tooltips-general" placeholder="Nombres" required="" data-toggle="tooltip" data-placement="top" title="Escriba los nombres de la Persona" value="Stalin Oswaldo">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Edificio</label>
+                                <label>Nombres</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Número de Piso" required="" data-toggle="tooltip" data-placement="top" title="Escriba el piso en el que se ubica el aula">
+                                <input type="text" class="material-control tooltips-general" placeholder="Apellidos" required="" data-toggle="tooltip" data-placement="top" title="Escriba los apellidos de la Persona" value="Crisanto Caiza">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Número de Piso</label>
+                                <label>Apellidos</label>
                             </div>
-                            <p class="text-center">
-                                <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
-                                <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-floppy"></i> &nbsp;&nbsp; Guardar</button>
-                            </p> 
+                            <div class="group-material">
+                                <input type="text" class="material-control tooltips-general" placeholder="Fecha de Nacimiento" required="" data-toggle="tooltip" data-placement="top" title="Seleccione la fecha de nacimiento" value="09/10/1996">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Fechas de Nacimiento</label>
+                            </div>
+                            <div class="group-material">
+                                <input type="text" class="material-control tooltips-general" placeholder="Dirección de la persona" required="" data-toggle="tooltip" data-placement="top" title="Escriba la dirección de la persona" value="Sangolquí">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Dirección</label>
+                            </div>
+                            <div class="group-material">
+                                <input type="text" class="material-control tooltips-general" placeholder="Teléfono de la persona" required="" data-toggle="tooltip" data-placement="top" title="Escriba el teléfono de la persona" value="0995077348">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Teléfono</label>
+                            </div>
+                            <div class="group-material">
+                                <input type="text" class="material-control tooltips-general" placeholder="Correo de la persona" required="" data-toggle="tooltip" data-placement="top" title="Escriba el correo de la persona" value="stalincrisanto@hotmail.com">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Correo Personal</label>
+                            </div> 
                        </div>
                    </div>
                </form>
