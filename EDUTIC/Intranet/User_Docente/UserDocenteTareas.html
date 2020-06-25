@@ -33,28 +33,28 @@
             </div>
             <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
                 <figure>
-                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="../assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
                         style="width:55%;">
                 </figure>
                 <p class="text-center" style="padding-top: 15px;">Unidad Educativa "Oswaldo Guayasamin"</p>
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="./userDocente.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
+                    <li><a href="./UserDocente.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Inicio</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteCalificaciones.html">
                             <i class="zmdi zmdi-trending-up zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Calificaciones</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteFaltas.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Faltas</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteTareas.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Tareas</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteComunicados.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Comunicados</a></li>
@@ -68,12 +68,12 @@
         <nav class="navbar-user-top full-reset">
             <ul class="list-unstyled full-reset">
                 <figure>
-                    <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
+                    <img src="../assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
                 </figure>
                 <li style="color:#fff; cursor:default;">
                     <span class="all-tittles">Docente</span>
                 </li>
-                <li class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom"
+                <li class="tooltips-general exit-system-button" data-href="../../index.html" data-placement="bottom"
                     title="Salir del sistema">
                     <i class="zmdi zmdi-power"></i>
                 </li>
@@ -87,16 +87,70 @@
         </nav>
         <div class="container">
             <div class="page-header">
-                <h1 class="all-tittles">EduTic <small>Inicio - Docente</small></h1>
+                <h1 class="all-tittles">EduTic <small>Inicio - Docente - Tareas</small></h1>
             </div>
         </div>
         <section class="full-reset text-center" style="padding: 40px 0;">
 
-            <article class="tile">
-                <div class="tile-icon full-reset"><i class="zmdi zmdi-male-alt"></i></div>
-                <div class="tile-name all-tittles">docentes</div>
-                <div class="tile-num full-reset">D00001234</div>
-            </article>
+
+            <div class="container-fluid">
+                <div class="container-flat-form">
+                    <div class="title-flat-form title-flat-blue">Tarea</div>
+                    <form>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+
+                                <div class="group-material">
+                                    <select class="material-control tooltips-general" data-toggle="tooltip"
+                                        data-placement="top" title="Elige la sección encargada del docente">
+                                        <option value="" disabled="" selected="">Selecciona Asignatura</option>
+                                        <option value="Seccion">Lengua y literatura</option>
+                                        <option value="Seccion">Matemática</option>
+                                        <option value="Seccion">Entorno natural y social</option>
+                                        <option value="Seccion">Ciencias naturales</option>
+                                        <option value="Seccion">Estudios sociales</option>
+                                        <option value="Seccion">Educación estética</option>
+                                        <option value="Seccion">Educación física</option>
+                                        <option value="Seccion">Lengua extranjera</option>
+
+                                    </select>
+                                </div>
+
+                                <div class="group-material">
+                                    <input type="text" class="material-control tooltips-general"
+                                        placeholder="Nombre del aula" required="" data-toggle="tooltip"
+                                        data-placement="top" title="Escriba el nombre del aula">
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Mensaje o Detalle</label>
+                                </div>
+
+                                <form action="../../form-result.php" method="post" enctype="multipart/form-data"
+                                    target="_blank">
+                                    <p>
+                                        Sube un archivo :<br></br>
+                                        
+                                    </p>
+                                    <p>
+                                        Nota Importante <br></br>(Adjuntar archivos con un peso máximo de 7 MB):
+                                        <br></br>
+                                        <input type="file" name="archivosubido">
+                                    </p>
+                                    <br></br>
+                                </form>
+
+
+                                <p class="text-center">
+                                    <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i
+                                            class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
+                                    <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-floppy"></i>
+                                        &nbsp;&nbsp; Guardar</button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
         </section>
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">

@@ -33,28 +33,28 @@
             </div>
             <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
                 <figure>
-                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
+                    <img src="../assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
                         style="width:55%;">
                 </figure>
                 <p class="text-center" style="padding-top: 15px;">Unidad Educativa "Oswaldo Guayasamin"</p>
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="./userDocente.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
+                    <li><a href="./UserDocenteComunicados.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
                             Inicio</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteCalificaciones.html">
                             <i class="zmdi zmdi-trending-up zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Calificaciones</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteFaltas.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Faltas</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteTareas.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Tareas</a></li>
-                    <li><a href="./anioElectivo.html">
+                    <li><a href="./UserDocenteComunicados.html">
                             <i class="zmdi zmdi-face zmdi-hc-fw">
                             </i>&nbsp;&nbsp;
                             Comunicados</a></li>
@@ -68,12 +68,12 @@
         <nav class="navbar-user-top full-reset">
             <ul class="list-unstyled full-reset">
                 <figure>
-                    <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
+                    <img src="../assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
                 </figure>
                 <li style="color:#fff; cursor:default;">
                     <span class="all-tittles">Docente</span>
                 </li>
-                <li class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom"
+                <li class="tooltips-general exit-system-button" data-href="../../index.html" data-placement="bottom"
                     title="Salir del sistema">
                     <i class="zmdi zmdi-power"></i>
                 </li>
@@ -103,94 +103,88 @@
             </div>
         </div>
 
-        <section class="full-reset text-center" style="padding: 40px 0;">
-            <div class="container-fluid">
-                <div class="container-flat-form">
-                    <div class="title-flat-form title-flat-blue">Registrar Faltas</div>
-                    <form autocomplete="off">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                                
-                                
-                                <div class="group-material">
-                                    <span>Estudiantes</span>
-                                    <select class="material-control tooltips-general" data-toggle="tooltip"
-                                        data-placement="top" title="Elige un estudiante">
-                                        <option value="" disabled="" selected="">Selecciona un estudiante</option>
-                                        <option value="Seccion">Luis Perez</option>
-                                        <option value="Seccion">Pedro Sanchez</option>
-                                        <option value="Seccion">Karen Paspuel </option>
-                                        <option value="Seccion">Veronica Castro</option>
-                                        <option value="Seccion">Juan Ruiz</option>
-                                        <option value="Seccion">Enrique Jumbo</option>
-                                        <option value="Seccion">Carlos Suntaxi</option>
-                                        <option value="Seccion">Geovani Paucar</option>
-                                        <option value="Seccion">Geordana Fuertes</option>
-                                       
-                                    </select>
-                                </div>
-                                <div class="group-material">
-                                    <span>Asigantura</span>
-                                    <select class="material-control tooltips-general" data-toggle="tooltip"
-                                        data-placement="top" title="Elige una asignatura">
-                                        <option value="" disabled="" selected="">Selecciona su asignatura</option>
-                                        <option value="Seccion">Lengua y literatura</option>
-                                        <option value="Seccion">Matemática</option>
-                                        <option value="Seccion">Entorno natural y social</option>
-                                        <option value="Seccion">Ciencias naturales</option>
-                                        <option value="Seccion">Estudios sociales</option>
-                                        <option value="Seccion">Educación estética</option>
-                                        <option value="Seccion">Educación física</option>
-                                        <option value="Seccion">Lengua extranjera</option>
-                                        <option value="Seccion">Proyectos escolares</option>
-                                       
-                                    </select>
-                                </div>
-                                <br></br>
-
-                                <label for="start">Fecha de la falta:</label>
-                                <br></br>
-                                <input type="date" id="start" name="trip-start" value="2020-01-01" min="2020-01-01"
-                                    max="2020-12-31">
-                            <p class="text-center">
-
-                                <br></br>
-                                
-                                <div class="group-material">
-                                    <span>Tipo de falta</span>
-                                    <select class="material-control tooltips-general" data-toggle="tooltip"
-                                        data-placement="top" title="Elige un tipo de falta">
-                                        <option value="" disabled="" selected="">Selecciona un tipo de falta</option>
-                                        <option value="Seccion">Justificada</option>
-                                        <option value="Seccion">Injustificadas</option>
-                                        
-                                    </select>
-                                </div>
-                                
-                                <p class="text-center">
-                                    <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i
-                                            class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
-                                    <button type="submit" class="btn btn-primary"><i class="zmdi zmdi-floppy"></i>
-                                        &nbsp;&nbsp; Guardar</button>
-                                </p>
-                            </div>
-                        </div>
-                    </form>
+        <div class="container-fluid">
+            <form class="pull-right" style="width: 30% !important;" autocomplete="off">
+                <div class="group-material">
+                    <input type="search" style="display: inline-block !important; width: 70%;"
+                        class="material-control tooltips-general" placeholder="Buscar Estudiante" required=""
+                        pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]{1,50}" maxlength="50" data-toggle="tooltip" data-placement="top"
+                        title="Escribe el nombre del estudiante">
+                    <button class="btn" style="margin: 0; height: 43px; background-color: transparent !important;">
+                        <i class="zmdi zmdi-search" style="font-size: 25px;"></i>
+                    </button>
                 </div>
+            </form>
+            <h2 class="text-center all-tittles" style="clear: both; margin: 25px 0;">Listado de Estudiantes</h2>
+            <div class="table-responsive">
+                <div class="div-table" style="margin:0 !important;">
+                    <div class="div-table-row div-table-row-list" style="background-color:#DFF0D8; font-weight:bold;">
+
+                        <div class="div-table-cell" style="width: 15%;">Codigo</div>
+                        <div class="div-table-cell" style="width: 15%;">Nombre</div>
+                        <div class="div-table-cell" style="width: 15%;">Materia</div>
+                        <div class="div-table-cell" style="width: 12%;">Días</div>
+                        <div class="div-table-cell" style="width: 9%;">Actualizar</div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <div class="div-table" style="margin:0 !important;">
+                        <div class="div-table-row div-table-row-list">
+
+                            <div class="div-table-cell" style="width: 15%;">E01000</div>
+                            <div class="div-table-cell" style="width: 15%;">Juan Perez</div>
+                            <div class="div-table-cell" style="width: 15%;">Educación Fisica</div>
+                            <div class="div-table-cell" style="width: 12%;">L,Ma,Mi,J</div>
+                            <div class="div-table-cell" style="width: 9%;">
+                                <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <div class="div-table" style="margin:0 !important;">
+                        <div class="div-table-row div-table-row-list">
+
+                            <div class="div-table-cell" style="width: 15%;">E01001</div>
+                            <div class="div-table-cell" style="width: 15%;">Karen Paspuel</div>
+                            <div class="div-table-cell" style="width: 15%;">Educación Fisica</div>
+                            <div class="div-table-cell" style="width: 12%;">L,Ma,Mi,J</div>
+                            <div class="div-table-cell" style="width: 9%;">
+                                <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <div class="div-table" style="margin:0 !important;">
+                        <div class="div-table-row div-table-row-list">
+
+                            <div class="div-table-cell" style="width: 15%;">E01002</div>
+                            <div class="div-table-cell" style="width: 15%;">Hugo Paspuel</div>
+                            <div class="div-table-cell" style="width: 15%;">Educación Fisica</div>
+                            <div class="div-table-cell" style="width: 12%;">L,Ma,Mi,J</div>
+                            <div class="div-table-cell" style="width: 9%;">
+                                <button class="btn btn-success"><i class="zmdi zmdi-refresh"></i></button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
             </div>
+        </div>
+        
 
 
 
-
-
-
-
-
-
-
-
-            
-        </section>
         <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
