@@ -82,15 +82,15 @@ h3 {
 
 .boton:hover {
     cursor: pointer;
-    background: #52b6f8;
-    background: -webkit-linear-gradient(bottom,  #5e63f7, #4699e7);
-    background: -o-linear-gradient(bottom,  #5e63f7, #4699e7);
-    background: -moz-linear-gradient(bottom,  #5e63f7, #4699e7);
-    background: linear-gradient(bottom,  #5e63f7, #4699e7);
+    background: #2B3D51;
+    background: -webkit-linear-gradient(bottom,  #2B3D51, #4699e7);
+    background: -o-linear-gradient(bottom,  #2B3D51, #4699e7);
+    background: -moz-linear-gradient(bottom,  #2B3D51, #4699e7);
+    background: linear-gradient(bottom,  #2B3D51, #4699e7);
 }
 
 .boton-celeste {
-    background-color: #52b6f8;
+    background-color: #2B3D51;
 }
 .regreso{
     margin: 0;
@@ -99,7 +99,7 @@ h3 {
 /* Header */
 
 .site-header {
-    background-color:  #52b6f8;
+    background-color:  #2B3D51;
     padding: 0px 0;
 }
 

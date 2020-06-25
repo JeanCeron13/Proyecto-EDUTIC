@@ -65,7 +65,7 @@
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">EduTic <small>Gestión de Roles</small></h1>
+              <h1 class="all-tittles">EduTic <small>Gestión de Estado</small></h1>
             </div>
         </div>
         <div class="container-fluid">
@@ -80,44 +80,29 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
                     
-                    Funcionalidad que permite gestionar los usuarios que va a tener el sistema.
+                    Cambio de estado de Usuario
                 
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="container-flat-form">
-                <div class="title-flat-form title-flat-blue">Creacion de Usuarios</div>
+                <div class="title-flat-form title-flat-blue">Modificación Estado de Usuario </div>
                 <form>
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Nombre y Apellido" required="" data-toggle="tooltip" data-placement="top" title="Escriba su Nombre y su Apellido">
+                                <input type="text" class="material-control tooltips-general" placeholder="Código de Usuario" required="" data-toggle="tooltip" data-placement="top" title="Escriba el Código de Usuario">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre y Apellido</label>
-                            </div>
-                            <div class="group-material">
-                                <input type="dni" class="material-control tooltips-general" placeholder="Número de Cédula" required="" data-toggle="tooltip" data-placement="top" title="Escribe su Número de Cédula">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Número de Cédula</label>
-                            </div>
-                            <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Correo electrónico" required="" data-toggle="tooltip" data-placement="top" title="Escriba la Dirección de su correo electrónico">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Correo electrónico</label>
+                                <label>Código de Usuario</label>
                             </div>
                             <div class="selectUser">
-                                <p style="color: rgb(212, 11, 11);" class="group-material" >Escoja el Tipo de Usuario:</p>
+                                <p style="color: rgb(212, 11, 11);" class="group-material" >Escoja el Estado del Usuario:</p>
                                 <select name="rol" class="group-material">
-                                    <option value= "seleccion" disabled selected> > Tipo de Usuario</option>
-                                    <option value="Usuario Directivo">Directivo</option>
-                                    <option value="Usuario Administrativo">Administrativo</option>
-                                    <option value="Usuario Docente">Docente</option>
-                                    <option value="Usuario Estudiante">Estudiante</option>
-                                    <option value="Usuario Representante">Representante</option>
+                                    <option value= "seleccion" disabled selected> > Estado de Usuario</option>
+                                    <option value="Usuario Directivo">Activo</option>
+                                    <option value="Usuario Administrativo">Pasivo</option>
                                 </select>
                             </div>
                             <br>
