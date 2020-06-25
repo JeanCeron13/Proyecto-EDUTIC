@@ -4,20 +4,20 @@
     <title>EduTic</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="Shortcut Icon" type="image/x-icon" href="../images/logolobo.png" />
-    <script src="js/sweet-alert.min.js"></script>
-    <link rel="stylesheet" href="css/sweet-alert.css">
-    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="../assets/img/logolobo.png" />
+    <script src="../js/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="../css/sweet-alert.css">
+    <link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <div class="navbar-lateral full-reset">
@@ -29,15 +29,13 @@
             </div>
             <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
                 <figure>
-                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box" style="width:55%;">
+                    <img src="../assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box" style="width:55%;">
                 </figure>
                 <p class="text-center" style="padding-top: 15px;">Unidad Educativa "Oswaldo Guayasamin"</p>
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="./GestionPass.html"><i class="zmdi zmdi-lock-open"></i>&nbsp;&nbsp; Recuperar contraseña</a></li>
-                    <li><a href="./BlockAcount.html"><i class="zmdi zmdi-block-alt"></i>&nbsp;&nbsp; Recuperar cuenta bloqueada</a></li>
-
+                    <li><a href="./InPrimeraVez.html"><i class="zmdi zmdi-lock"></i>&nbsp;&nbsp; Ingreso por Primera Vez</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +43,7 @@
     <div class="content-page-container full-reset custom-scroll-containers">
         <nav class="navbar-user-top full-reset">
             <ul class="list-unstyled full-reset">
-                <li  class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom" title="Salir del sistema">
+                <li  class="tooltips-general exit-system-button" data-href="../../index.html" data-placement="bottom" title="Salir del sistema">
                     <i class="zmdi zmdi-power"></i>
                 </li>
                 <li  class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
@@ -58,36 +56,48 @@
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">EduTic <small>Recuperar Contraseña</small></h1>
+              <h1 class="all-tittles">EduTic <small>Ingreso por Primera Vez</small></h1>
             </div>
         </div>
         <div class="container-fluid">
             <ul class="nav nav-tabs nav-justified"  style="font-size: 17px;">
-              <li role="presentation" class="active"><a href="admininstitution.php">Recuperar Contraseña</a></li>
+              <li role="presentation" class="active"><a href="admininstitution.php">Contraseñas</a></li>
             </ul>
         </div>
         <div class="container-fluid"  style="margin: 50px 0;">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3">
-                    <img src="assets/img/user04.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                    <img src="../assets/img/clock.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
-                Funcionalidad que permite recuperar la contraseña mediante el uso de la cédula
+                    Funcionalidad que permite cambiar la contraseña por defecto, a una de su preferencia
                 </div>
             </div>
         </div>
         <div class="container-fluid">
             <div class="container-flat-form">
-                <div class="title-flat-form title-flat-blue">Recuperación de Contraseña</div>
+                <div class="title-flat-form title-flat-blue">Acceso por Primera Vez</div>
                 <form>
                     <div class="row">
                         
                         <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Número de Cédula" required="" data-toggle="tooltip" data-placement="top" title="Ingrese su número de cédula para recuperar su contraseña">
+                                <input type="text" class="material-control tooltips-general" placeholder="Código de Usuario" required="" data-toggle="tooltip" data-placement="top" title="Escriba su Código de Usuario">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Número de Cédula</label>
+                                <label>Código de Usuario</label>
+                            </div>
+                            <div class="group-material">
+                                <input type="password" class="material-control tooltips-general" placeholder="Nueva Contraseña" required="" data-toggle="tooltip" data-placement="top" title="Digite su nueva contraseña, minimo 8 digitos">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Nueva Contraseña</label>
+                            </div>
+                            <div class="group-material">
+                                <input type="password" class="material-control tooltips-general" placeholder="Confirmar Contraseña" required="" data-toggle="tooltip" data-placement="top" title="Digite otra vez su contraseña">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Confirmar Contraseña</label>
                             </div>
                             <p class="text-center">
                                 <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>

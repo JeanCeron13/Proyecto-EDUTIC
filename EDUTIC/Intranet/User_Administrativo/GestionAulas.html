@@ -4,20 +4,20 @@
     <title>EduTic</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="Shortcut Icon" type="image/x-icon" href="../images/logolobo.png" />
-    <script src="js/sweet-alert.min.js"></script>
-    <link rel="stylesheet" href="css/sweet-alert.css">
-    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="../assets/img/logolobo.png" />
+    <script src="../js/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="../css/sweet-alert.css">
+    <link rel="stylesheet" href="../css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="../js/modernizr.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <div class="navbar-lateral full-reset">
@@ -29,16 +29,22 @@
             </div>
             <div class="full-reset" style="background-color:#2B3D51; padding: 10px 0; color:#fff;">
                 <figure>
-                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box" style="width:55%;">
+                    <img src="../assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box" style="width:55%;">
                 </figure>
                 <p class="text-center" style="padding-top: 15px;">Unidad Educativa "Oswaldo Guayasamin"</p>
             </div>
             <div class="full-reset nav-lateral-list-menu">
                 <ul class="list-unstyled">
-                    <li><a href="userDirectivo.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Inicio</a></li>
-                    <li><a href="institutionDirectivo.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp; Datos institución</a></li>
-                    <li><a href="reportDirectivo.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y estadísticas</a></li>
-                    <li><a href="advancesettingsDirectivo.html"><i class="zmdi zmdi-wrench zmdi-hc-fw"></i>&nbsp;&nbsp; Configuraciones avanzadas</a></li>
+                    <li><a href="./userAdministrativo.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Inicio</a></li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp; Datos Institución <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw"></i></div>
+                        <ul class="list-unstyled">
+                            <li><a href="./institutionAdministrativo.html"><i class="zmdi zmdi-pin"></i>&nbsp;&nbsp; Gestion Sede</a></li>
+                            <li><a href="./GestionEdificios.html"><i class="zmdi zmdi-star-circle"></i>&nbsp;&nbsp; Gestion edificios</a></li>
+                            <li><a href="./GestionAulas.html"><i class="zmdi zmdi-pin-account"></i>&nbsp;&nbsp; Gestion aulas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./reportAdministrativo.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y estadísticas</a></li>
                 </ul>
             </div>
         </div>
@@ -47,12 +53,12 @@
         <nav class="navbar-user-top full-reset">
             <ul class="list-unstyled full-reset">
                 <figure>
-                   <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
+                   <img src="../assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
                 </figure>
                 <li style="color:#fff; cursor:default;">
-                    <span class="all-tittles">Directivo</span>
+                    <span class="all-tittles">Administrativo</span>
                 </li>
-                <li  class="tooltips-general exit-system-button" data-href="../index.html" data-placement="bottom" title="Salir del sistema">
+                <li  class="tooltips-general exit-system-button" data-href="../../index.html" data-placement="bottom" title="Salir del sistema">
                     <i class="zmdi zmdi-power"></i>
                 </li>
                 <li  class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
@@ -65,7 +71,7 @@
         </nav>
         <div class="container">
             <div class="page-header">
-              <h1 class="all-tittles">EduTic <small>Administración Institución</small></h1>
+              <h1 class="all-tittles">EduTic <small>Gestión de Aulas</small></h1>
             </div>
         </div>
         <div class="container-fluid">
@@ -76,11 +82,11 @@
         <div class="container-fluid"  style="margin: 50px 0;">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3">
-                    <img src="assets/img/institution.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
+                    <img src="../assets/img/institution.png" alt="user" class="img-responsive center-box" style="max-width: 110px;">
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
                     
-                    Funcionalidad que permite gestionar las sedes de la institución educativa
+                    Funcionalidad que permite gestionar las aulas de la institución educativa
                     mediante el ingreso de los campos que se presentan a continuación.
                 
                 </div>
@@ -88,45 +94,33 @@
         </div>
         <div class="container-fluid">
             <div class="container-flat-form">
-                <div class="title-flat-form title-flat-blue">Guardar datos de la Sede</div>
+                <div class="title-flat-form title-flat-blue">Guardar datos de las Aulas de la Institución</div>
                 <form>
                     <div class="row">
                        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Código de sede" required="" data-toggle="tooltip" data-placement="top" title="Solo números, máximo 10 caracteres">
+                                <input type="text" class="material-control tooltips-general" placeholder="Código de aula" required="" data-toggle="tooltip" data-placement="top" title="Escriba el codigo del aula">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Código de sede</label>
+                                <label>Código de aula</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Nombre de la institución" required="" data-toggle="tooltip" data-placement="top" title="Escribe el nombre de la institución">
+                                <input type="text" class="material-control tooltips-general" placeholder="Nombre del aula" required="" data-toggle="tooltip" data-placement="top" title="Escriba el nombre del aula">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Nombre de la institución</label>
+                                <label>Nombre del aula</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Dirección de la institución" required="" data-toggle="tooltip" data-placement="top" title="Escriba la Dirección de la Institución">
+                                <input type="text" class="material-control tooltips-general" placeholder="Edificio" required="" data-toggle="tooltip" data-placement="top" title="Escriba el nombre del edificio donde se ubica el aula">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Dirección de la institución</label>
+                                <label>Edificio</label>
                             </div>
                             <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Teléfono de la institución" required="" data-toggle="tooltip" data-placement="top" title="Solo 9 números">
+                                <input type="text" class="material-control tooltips-general" placeholder="Número de Piso" required="" data-toggle="tooltip" data-placement="top" title="Escriba el piso en el que se ubica el aula">
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Teléfono</label>
-                            </div>
-                            <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Coódigo Postal" required="" data-toggle="tooltip" data-placement="top" title="Solo números, máximo 6 caracteres">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Código Postal</label>
-                            </div>
-                            <div class="group-material">
-                                <input type="text" class="material-control tooltips-general" placeholder="Número de Edificios" required="" data-toggle="tooltip" data-placement="top" title="Escriba el número de edificios de la Institución">
-                                <span class="highlight"></span>
-                                <span class="bar"></span>
-                                <label>Número de Edificios</label>
+                                <label>Número de Piso</label>
                             </div>
                             <p class="text-center">
                                 <button type="reset" class="btn btn-info" style="margin-right: 20px;"><i class="zmdi zmdi-roller"></i> &nbsp;&nbsp; Limpiar</button>
